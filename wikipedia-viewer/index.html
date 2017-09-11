@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>wikipedia viewer</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+<div class="background"></div>
+<div class="flexContainer_row">
+<form name="searchForm" onsubmit="searchWikipedia" class="flexForm form" id="form">
+  
+  <input class="textInput" type="text" name="wikiSearch"></input>
+<div id="searchButton" class="searchButton" type="submit">  
+
+<i class="material-icons searchIcon">search</i>
+</div>
+
+  
+<div class="textButton" >  
+<a id = "randomSearch" href="https://en.wikipedia.org/wiki/Special:Random"> random</a></div>
+  
+</form>
+</div>
+
+<div id="results" class="flexContainer_column results"></div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>

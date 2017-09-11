@@ -4,279 +4,70 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Jessica Campbell</title>
-    <link href="https://fonts.googleapis.com/css?family=Bowlby+One" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Oswald" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
-
-
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel = "stylesheet" type = "text/css" href = "styles.css" />
 
   </head>
-  <script src="jquery-3.2.1.min.js"></script>
-  <script type="text/javascript">
-  $( document ).ready(function() {
-
-  $(".circle-jumps").bind("webkitAnimationEnd mozAnimationEnd animationEnd", function(){
-  $(this).removeClass("animated")
-});
-
-  $(".circle-jumps").hover(function(){
-  $(this).addClass("animated");
-});
-
-
-  });
+<body>
+  <div class="flexContainer site">
+  <nav class="flexContainer nav">
+  <ul class="flexItem flexStart">
+    <li>Jessica Campbell</li>
+  </ul>
+  <ul class="flexContainer flexEnd">
+    <li><a href= "#about">about</a></li>
+    <li><a href= "#mini-projects">mini projects</a></li>
+    <li><a href= "#say-hello">say hello</a></li>
+  </ul>
 
 
+</nav>
+<div class=" main flexItem">
+  <div class="about  flexItem" id = "about">
+    <a href="https://www.youtube.com/watch?v=Sp5mVTLwHno" target="_blank"><h1>It's me... Jessica!</h1></a>
+    <p>   I'm a web and mobile designer/developer working out of Ann Arbor, Michigan. I love simple interfaces and thoughtful design. I use Adobe design tools and write HTML, CSS, and JavaScript.</p>
+  </div>
+  <h2 id = "mini-projects">mini projects</h2>
+  <div class="portfolio flexContainer flexItem ">
 
-      </script>
-  <style>
-    body {
-      font-family: 'Yanone Kaffeesatz', sans-serif;
-    /*  font-family: 'Oswald', sans-serif;  */
-      margin: 0;
-    }
-    .header {
-      padding: 30px;
-    }
-    .container {
-      width: 980px;
-      margin: 30px auto;
-      background-color: pink;
-      min-height: 200px;
-    }
-    .navbar {
-
-      height: 100px;
-      padding: 20px;
-
-    }
-    .logo {
-      width: 400px;
-      float: left;
-
-    }
-    .container-pink {
-      background-color: pink;
-    }
-    .container-orange {
-      background-color: orange;
-    }
-    .container-yellow {
-      background-color: yellow;
-    }
-    .container-responsive {
-      width: 100%;
-    }
-    .navlink,
-    .navbtn {
-      float: right;
-      padding: 20px;
-      margin-right: 20px;
-    }
-    .navbtn {
-      border: solid black 2px;
-      margin-right: 38px;
-    }
-    .label {
-      text-align: center;
-      margin-top: 60px;
-    }
-    .logo-text-lg {
-
-      font-size: 30px;
-      font-family: 'Abril Fatface', cursive;
-
-    }
-    .logo-text-sm {
-    }
-    .btnsdiv {
-      margin: 20px;
-      width: 400px;
-      height: 100px;
-      float: right;
-    }
-    .circle {
-      width: 60px;
-      height: 60px;
-      margin-right: 13px;
-      border-radius: 40px;
-      border: 2px black solid;
-      float: left;
-    }
-    .circle-jumps{
-      width: 150px;
-      height: 150px;
-      border-radius: 80px;
-      position: absolute;
-
-      bottom: 0;
-
-    }
-    .circle-jumps-one{
-      left: 0;
-    }
-    .circle-jumps-two{
-      left: 200px;
-    }
-    .circle-jumps-three{
-      left: 400px;
-    }
-    .circle-jumps-four{
-      left: 600px;
-    }
-    .circle-jumps-five{
-      left: 800px;
-    }
-    .circle-jumps-six{
-      left: 1000px;
-    }
-    .circle-jumps.animated {
-    -moz-animation: bounce 1.5s;
-    -webkit-animation: bounce 1.5s;
-    animation: bounce 1.5s;
-}
-  .textBox{
-    width: 100%;
-    height: 300px;
-
-    margin: 0 auto;
-    text-align: center;
-  }
-  .textBox_span{
-    font-size: 36px;
-    width: 100%;
-  }
-    @keyframes bounce{
-
-0% {
- bottom: 0;
- animation-timing-function: ease-in;
-}
-
-10% {
-  bottom: 30px;
-  animation-timing-function: ease-out;
-}
-20% {
- bottom: 0px;
- animation-timing-function: ease-in;
-}
-30% {
-  bottom: -30px;
-  animation-timing-function: ease-out;
-}
-40% {
- bottom: 15px;
- animation-timing-function: ease-in;
-}
-*/
-50% {
- bottom: -15px;
- animation-timing-function: ease-out;
-}
-
-60% {
- bottom: 10px;
- animation-timing-function: ease-in;
-}
-70% {
- bottom: -10px;
- animation-timing-function: ease-out;
-}
-80% {
- bottom: 5px;
- animation-timing-function: ease-in;
-}
-90% {
- bottom: -5px;
- animation-timing-function: ease-out;
-}
-
-100% {
-  bottom: 0;
-  animation-timing-function: ease-in;
-}
-}
-    @-moz-keyframes bounce {
-
-from {
- bottom: 0;
- animation-timing-function: ease-in;
-}
-
-to {
- bottom: 30px;
- animation-timing-function: ease-out;
-}
-}
-
-    @-webkit-keyframes bounce {
-
-from {
- bottom: 0;
- animation-timing-function: ease-in;
-}
-
-to {
- bottom: 30px;
- animation-timing-function: ease-out;
-}
-}
-  .ballbox{
-      height: 150px;
-      width: 1154px;
-      margin: 0 auto;
-      position: relative;
-
-
-    }
-
-  .clearFix{
-      clear: both;
-    }
-
-  </style>
-  <body>
-    <div class="container-responsive navbar">
-      <div class="logo">
-        <div class="circle"></div>
-        <span class="logo-text-lg">jessica campbell</span>
-        <div></div>
-        <span class="logo-text-sm">Front End Developer</span>
+    <a href = "simon-game/index.html">
+      <div class="card">
+          <img src="assets/simon.png">
+          <div class="caption">
+            <p>Simon Game - a simple javascript analog of the classic memory game</p></div>
       </div>
-      <div class="">
-        <btn class="navbtn">Say Hello</btn>
-        <a class="navlink">About</a>
-        <a class="navlink">Work</a>
+    </a>
+    <a href = "single-player-tic-tac-toe-game/index.html">
+      <div class="card">
+          <img src="assets/tic-tac-toe.png">
+          <div class="caption"><p>Tic Tac Toe - battle the computer in an epic game of x vs. o</p></div>
       </div>
-    </div>
-    <div class="clearFix"></div>
-    <div class="textBox" id="aboutMe">
-      <span class="textBox_span">Hi, my name is Jess and I am passionate about building beautiful and engaging websites.</span>
-    </div>
-    <div class="ballbox">
-        <div class="circle circle-jumps circle-jumps-one">
-          <div class="label">html</div>
-        </div>
-        <div class="circle circle-jumps circle-jumps-two">
-          <div class="label">css</div>
-        </div>
-        <div class="circle circle-jumps circle-jumps-three">
-          <div class="label">web design</div>
-        </div>
-        <div class="circle circle-jumps circle-jumps-four">
-          <div class="label">prototyping</div>
-        </div>
-        <div class="circle circle-jumps circle-jumps-five">
-          <div class="label">javascript</div>
-        </div>
-        <div class="circle circle-jumps circle-jumps-six">
-          <div class="label">mobile design</div>
-        </div>
-    </div>
-    <div id="contact" class="footer">
+    </a>
+    <a href = "twitch-viewer-2-0/index.html">
+      <div class="card">
+          <img src="assets/twitch-viewer.png">
+          <div class="caption"><p>Twitch Viewer - monitor the status of some top streamers.</p></div>
+      </div>
+    </a>
+    <a href = "wikipedia-viewer.html">
+      <div class="card">
+          <img src="assets/wikipedia-viewer.png">
+          <div class="caption"><p>Wikipedia Viewer- knowledge awaits. Search now!</p></div>
+      </div>
+    </a>
 
-    </div>
+  </div>
 
-  </body>
+</div>
+
+<footer class="footer flexContainer" id="say-hello">
+  <ul class="flexItem flexContainer">
+    <li><a href = "https://www.facebook.com/profile.php?id=1263361198">facebook</a></li>
+    <li><a href = "https://www.linkedin.com/in/jessica-campbell-552012115/">linked in</a></li>
+    <li><a href = "https://github.com/jlcampbell">github</a></li>
+    <li ><a href = "https://www.freecodecamp.org/jlcampbell">freeCodeCamp</a></li>
+  </ul>
+</footer>
+</div>
+</body>
 </html>

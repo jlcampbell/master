@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>twitch viewer 2.0</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<h1 class="title">Twitch.tv Status-Checker</h1>
+<p class='description'> A javascript app that checks the status of a few often-active  streams </p>
+<div class="contentContainer" id="streamers">
+  
+</div>
+<template id="streamTemplate">
+  <div class = "elementContainer">
+  <a class="link streamLink" target="_blank" >
+  <div class="stream">
+    <h2 class="name">name</h2>
+    <p class="online">online y/n</p>
+    <marquee behavior="scroll" direction="left" class="status">what they are streaming</marquee>
+  </div>
+  </a>
+  </div>  
+</template>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
