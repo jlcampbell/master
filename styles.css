@@ -1,7 +1,12 @@
+html {
+  padding: 0;
+  margin: 0;
+}
 body {
   font-family: 'Roboto', sans-serif;
+  margin: 0;
 }
-img {
+.portfolio img {
   width: 100%;
   filter: grayscale(100%);
   transition: all 1s;
@@ -14,6 +19,11 @@ a {
   font-size: 42px;
   line-height: 2;
   padding: 0 20px;
+  color: #722FAB;
+}
+nav img {
+  width: 50px;
+  height: 50px;
 }
 .about a{
   text-decoration: none;
@@ -23,6 +33,7 @@ a {
   font-size: 24px;
   padding: 0 20px;
 }
+
 .card:hover img {
   filter: grayscale(10%);
 }
@@ -32,6 +43,7 @@ a {
 }
 .portfolio {
   flex-flow: row wrap;
+  margin-bottom: 50px;
 }
 .site {
   min-height: 100vh;
@@ -50,22 +62,52 @@ a {
 .nav li,
 .footer li{
   display: block;
-  padding: 0 15px;
+  padding: 6px 15px;
+  margin: 0 10px;
+
+}
+.nav-btns li {
+  background-color: #DBEB07;
+  border-radius: 4px;
+  box-shadow: 2px 3px 10px 0px rgba(0,0,0,.2);
+  transition: all .3s ease-in-out;
+}
+.nav-btns li:hover {
+  background-color: #F1FF34;
+
+  box-shadow: 10px 10px 15px 2px rgba(0,0,0,.2);
+  transform: scale(1.02);
 
 }
 .main {
-  width: 60%;
+  width: 762px;
   margin: 0 auto;
+}
+.top-section {
+  background-color: #BA66FF;
 }
 .footer li {
   margin: auto;
+  background-color: #DBEB07;
+  border-radius: 4px;
+  box-shadow: 2px 3px 10px 0px rgba(0,0,0,.2);
+  transition: all .3s ease-in-out;
 }
-.card {
+.footer li:hover {
+  background-color: #F1FF34;
+  box-shadow: 10px 10px 15px 2px rgba(0,0,0,.2);
+  transform: scale(1.02);
+}
+.portfolio .card {
   width: 300px;
-  border-radius: 5px;
-  box-shadow: 5px 5px 10px 2px rgba(0,0,0,.2);
   padding: 20px;
   margin: 20px;
+}
+.card {
+
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px 2px rgba(0,0,0,.2);
+
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
 }
@@ -75,14 +117,25 @@ a {
 
 }
 .about {
-  border-bottom: 2px solid rgba(0,0,0,.2);
-  padding: 20px 0px;
+
+  padding: 20px 0px 50px 0px;
 }
 h2 {
   padding: 0 20px;
 }
+.name {
+  position: relative;
+}
+.profile {
+  position: absolute;
+  top: -8px;
+  left: -40px;
+}
+.profile {
+  border-radius: 30px;
+}
 
-@media all and (max-width: 640px) {
+@media all and (max-width: 762px) {
   .main {
     width: 100%;
   }
