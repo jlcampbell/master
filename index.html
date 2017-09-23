@@ -4,26 +4,42 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Jessica Campbell</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link rel = "stylesheet" type = "text/css" href = "styles.css" />
 
   </head>
 <body>
   <div class="flexContainer site">
 
-  <nav class="flexContainer nav">
-  <ul class="flexItem flexStart">
+    <nav class="flexContainer nav" id="js-nav">
+      <div class = "hamburgerMenu flexStart" id = "hamburgerMenu" href=#><i  class="material-icons">menu</i></div>
+      <ul class="flexContainer flexItem flexStart nav-btns" id = "menu-btns">
 
-    <li class = "name">Jessica Campbell <img class = "profile" src = "assets/jess.png"></li>
-  </ul>
-  <ul class="flexContainer flexEnd nav-btns">
+        <li><a href= "#about">about</a></li>
+        <li><a href= "#mini-projects">mini projects</a></li>
+        <li><a href= "#say-hello">say hello</a></li>
+      </ul>
+
+
+    <ul class="flexItem flexEnd flexContainer">
+      <li class = "name">Jessica Campbell </li>
+      <li ><img class = "profile" src = "assets/jess.png"></li>
+
+    </ul>
+
+
+
+</nav>
+<div id = "mobileMenu" class="mobileMenu">
+  <ul class="flexContainer mobileMenu-btns nav-btns"  >
+
     <li><a href= "#about">about</a></li>
     <li><a href= "#mini-projects">mini projects</a></li>
     <li><a href= "#say-hello">say hello</a></li>
   </ul>
-
-
-</nav>
+</div>
 <div class=" main flexItem">
   <div class="about flexItem" id = "about">
     <a href="https://www.youtube.com/watch?v=Sp5mVTLwHno" target="_blank"><h1>It's me... Jessica!</h1></a>
@@ -75,4 +91,6 @@
 </footer>
 </div>
 </body>
+
+<script type="text/javascript" src = "scripts.js" ></script>
 </html>

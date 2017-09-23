@@ -6,6 +6,14 @@ body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
 }
+h1,h2 {
+  font-weight: 400;
+}
+nav {
+  box-shadow: 3px 3px 12px 0px rgba(0,0,0,0.2);
+
+}
+
 .portfolio img {
   width: 100%;
   filter: grayscale(100%);
@@ -60,17 +68,22 @@ nav img {
   justify-content: flex-end;
 }
 .nav li,
-.footer li{
+.footer li,
+.nav-btns li {
   display: block;
   padding: 6px 15px;
   margin: 0 10px;
 
+}
+.nav-btns {
+  padding-left: 16px;
 }
 .nav-btns li {
   background-color: #DBEB07;
   border-radius: 4px;
   box-shadow: 2px 3px 10px 0px rgba(0,0,0,.2);
   transition: all .3s ease-in-out;
+  height: 23px;
 }
 .nav-btns li:hover {
   background-color: #F1FF34;
@@ -125,18 +138,58 @@ h2 {
 }
 .name {
   position: relative;
+
 }
 .profile {
-  position: absolute;
-  top: -8px;
-  left: -40px;
-}
-.profile {
+  margin-top: -9px;
   border-radius: 30px;
 }
+.hamburgerMenu {
+  padding: 20px;
+  width: 30px;
+  cursor: pointer;
+}
+.mobileMenu {
+  display: none;
+  background-color: rgb(250,250,250);
+  box-shadow: 2px 2px 12px 4px rgba(0,0,0,.2);
+  
+}
 
+
+#hamburgerMenu {
+  display: none;
+}
 @media all and (max-width: 762px) {
   .main {
     width: 100%;
   }
+
+}
+@media all and (max-width: 753px) {
+
+#hamburgerMenu {
+  display: block;
+}
+#menu-btns {
+  display: none;
+}
+}
+@media all and (max-width: 500px){
+.footer .flexContainer,
+.mobileMenu-btns {
+  flex-direction: column;
+  padding-left: 0;
+  text-align: center;
+
+
+}
+.footer li,
+.mobileMenu-btns li {
+  width: 100%;
+  margin-top: 5px;
+  box-shadow: none;
+  padding-left: 0;
+  margin-left: 0;
+}
 }
