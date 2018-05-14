@@ -4,87 +4,74 @@
   <head>
     <meta http-equiv="Content-Type" name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jessica Campbell</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     <link rel = "stylesheet" type = "text/css" href = "css/styles.css" />
-    <link rel = "stylesheet" type = "text/css" href = "css/navigation.css" />
-    <link rel = "stylesheet" type = "text/css" href = "css/material.css" />
+
 
   </head>
   <body>
-    <div class="flexContainer site">
+    <div class="main">
 
-      <nav class="flexContainer nav" id="js-nav">
-        <div class = "hamburgerMenu flexStart" id = "hamburgerMenu" href=#><i  class="material-icons">menu</i></div>
-        <ul class="flexContainer flexItem flexStart nav-btns" id = "menu-btns">
-          <li><a href= "#about">about</a></li>
-          <li><a href= "#mini-projects">mini projects</a></li>
-          <li><a href= "#say-hello">say hello</a></li>
-        </ul>
-        <ul class="flexItem flexEnd flexContainer">
-          <li class = "name">Jessica Campbell </li>
-          <li ><img class = "profile" src = "assets/jess.png"></li>
-        </ul>
+      <nav class="nav">
+        Jessica Campbell
       </nav>
-      <div id = "mobileMenu" class="mobileMenu">
-        <ul class="flexContainer mobileMenu-btns nav-btns"  >
+      <div class="hero">
+          <h1>Android, Web, UX Design</h1>
+          <p>User-Centered experiences designed and built with care in Ann Arbor </p>
 
-          <li><a href= "#about">about</a></li>
-          <li><a href= "#mini-projects">mini projects</a></li>
-          <li><a href= "#say-hello">say hello</a></li>
-        </ul>
       </div>
-      <div class=" main flexItem">
-        <div class="about flexItem" id = "about">
-          <h1>It's me... Jessica!</h1>
-          <p>I'm a web and mobile designer/developer working out of Ann Arbor, Michigan. I love simple interfaces and thoughtful design. I design with Adobe tools and build my projects using HTML, CSS, JavaScript, Java, and Python. I am part of the google assistant developer community program and a grow with google scholarship recipient for the Intermediate android developer track.</p>
-          <img src="assets/GrowWithGoogleDeveloperChallengeScholarship.png">
+      <div class="project">
+        <img class="project-image" src="assets/GrowWithGoogleDeveloperChallengeScholarship.png" alt="Grow With Google Scholarship">
+        <div class="project-description">
+          <h3 class="project-title">Grow With Google</h3>
+          <p>I am a Grow with Google Android Developer Nanodegree Scholarship Recipient.
+          </p>
         </div>
-
-      <h2 id = "mini-projects">mini projects</h2>
-      <div class="portfolio flexContainer flexItem ">
-
-        <a href = "simon-game/index.html">
-          <div class="card">
-              <img src="assets/simon.png">
-              <div class="caption">
-                <p>Simon Game - a simple javascript analog of the classic memory game</p></div>
-          </div>
-        </a>
-        <a href = "single-player-tic-tac-toe-game/index.html">
-          <div class="card">
-              <img src="assets/tic-tac-toe.png">
-              <div class="caption"><p>Tic Tac Toe - battle the computer in an epic game of x vs. o</p></div>
-          </div>
-        </a>
-        <a href = "twitch-viewer-2-0/index.html">
-          <div class="card">
-              <img src="assets/twitch-viewer.png">
-              <div class="caption"><p>Twitch Viewer - monitor the status of some top streamers.</p></div>
-          </div>
-        </a>
-        <a href = "wikipedia-viewer/index.html">
-          <div class="card">
-              <img src="assets/wikipedia-viewer.png">
-              <div class="caption"><p>Wikipedia Viewer- knowledge awaits. Search now!</p></div>
-          </div>
-        </a>
       </div>
-
-  </div>
-
-
-  <footer class="footer flexContainer" id="say-hello">
-    <ul class="flexItem flexContainer">
-      <li><a href = "https://www.facebook.com/profile.php?id=1263361198">facebook</a></li>
-      <li><a href = "https://www.linkedin.com/in/jessica-campbell-552012115/">linked in</a></li>
-      <li><a href = "https://github.com/jlcampbell">github</a></li>
-      <li ><a href = "https://www.freecodecamp.org/jlcampbell">freeCodeCamp</a></li>
-    </ul>
-  </footer>
+      <div class="project">
+        <img class="project-image" src="assets/simon.png" alt="Simon Game">
+        <div class="project-description">
+          <h3 class="project-title"><a href="simon-game/index.html">Simon Game</a></h3>
+          <p>A simple javascript analog of the classic memory game. I developed and designed this project from scratch based on a prompt from Free Code Camp. #javascript #ux #css
+          </p>
+        </div>
+      </div>
+      <div class="project project-image-right">
+        <img class="project-image" src="assets/tic-tac-toe.png" alt="Tic Tac Toe">
+        <div class="project-description">
+          <h3 class="project-title"><a href = "single-player-tic-tac-toe-game/index.html">Tic Tac Toe</a></h3>
+          <p>Battle the computer in an epic game of x vs o. I developed and designed this project from scratch based on a prompt from Free Code Camp. #javascript #ux #css
+          </p>
+        </div>
+      </div>
+      <div class="project project-image-right">
+        <img class="project-image" src="assets/twitch-viewer.png" alt="Twitch Viewer">
+        <div class="project-description">
+          <h3 class="project-title"><a href = "twitch-viewer-2-0/index.html">Twitch Viewer</a></h3>
+          <p>Monitor the status of some top streamers on Twitch. I developed and designed this project from scratch based on a prompt from Free Code Camp. #javascript #ux #css
+          </p>
+        </div>
+      </div>
+      <div class="project project-image-right">
+        <img class="project-image" src="assets/wikipedia-viewer.png" alt="Wikipedia Viewer">
+        <div class="project-description">
+          <h3 class="project-title"><a href = "wikipedia-viewer/index.html">Wikipedia Viewer</a></h3>
+          <p>A clean interface to search wikipedia and return results. I developed and designed this project from scratch based on a prompt from Free Code Camp. #javascript #ux #css
+          </p>
+        </div>
+      </div>
+      <footer >
+        <ul class="flexItem flexContainer">
+          <li><a href = "https://www.facebook.com/profile.php?id=1263361198">facebook</a></li>
+          <li><a href = "https://www.linkedin.com/in/jessica-campbell-552012115/">linked in</a></li>
+          <li><a href = "https://github.com/jlcampbell">github</a></li>
+          <li ><a href = "https://www.freecodecamp.org/jlcampbell">freeCodeCamp</a></li>
+        </ul>
+      </footer>
   </div>
   </body>
 
-<script type="text/javascript" src = "scripts.js" ></script>
+
 </html>
