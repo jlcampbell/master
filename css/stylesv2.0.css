@@ -4,6 +4,7 @@ body {
   width: 100%;
   font-family: 'Fira Sans', sans-serif;
   box-sizing: border-box;
+  color: rgba(50,50,50,1);
 
 }
 li {
@@ -20,20 +21,60 @@ a {
 .main {
   box-sizing: border-box;
 }
-.nav {
-  height: 30px;
-  width: 100%;
-  box-sizing: border-box;
-  padding-left: 20px;
-}
+
 h2 {
   padding-left: 20px;
 }
 .hero {
   width: 100%;
+  height: 450px;
+  margin-top: 30px;
+  margin-bottom: 40px;
   box-sizing: border-box;
-  padding: 20px;
+
+  background-image: url("../assets/hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
 }
+.hero-inset {
+  background-color: rgba(255,255,255, 0.7);
+  width: 80%;
+  position: relative;
+  padding: 20px;
+
+}
+
+.tagline {
+
+}
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: rgba(255,255,255, 0.7);
+  padding: 20px;
+
+}
+.tagline-lg {
+  font-size: 60px;
+}
+.decoration {
+  width: 10px;
+
+  background-color: black;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
 .project {
 
   width: 100%;
@@ -55,6 +96,13 @@ h2 {
 }
 
 @media screen and (min-width: 600px){
+  .hero{
+    height: 350px;
+
+  }
+  .tagline{
+
+  }
   .project {
     justify-content: space-between;
     padding: 0 20px;
@@ -80,5 +128,8 @@ h2 {
   }
   .project {
     margin-bottom: 70px;
+  }
+  .tagline{
+
   }
 }
