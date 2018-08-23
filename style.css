@@ -1,0 +1,14 @@
+
+.flex {
+  display: flex;
+}
+.justify-content {
+  justify-content: space-around;
+}
+.is-container-space-between {
+  justify-content: space-between;
+}
+.is-outline{}
+.is-content-card{
+  
+}
